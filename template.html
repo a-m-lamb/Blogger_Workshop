@@ -1,0 +1,512 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-Pv0uBz4cowWOr1lkFnd0TGdK0BY5XszpN7xZ7fvcYzB9jqvYYKFa0R2m8j7fFpxm" crossorigin="anonymous" />
+</head>
+
+<body>
+    <style>
+        button:hover {
+            background-color: #004AAD;
+        }
+
+
+        .landing_title {
+            font-size: 2vw;
+            margin-top: -1.2vw;
+        }
+
+        .landing {
+            position: relative;
+            width: 100vw;
+            overflow: hidden;
+            text-transform: uppercase;
+            margin-left: 50%;
+            /* Center horizontally */
+            transform: translateX(-50%);
+            margin-bottom: 0 !important;
+            /* Adjust for centering */
+            height: auto;
+            margin-top: 5%;
+        }
+
+        .landing_img {
+            width: 100%;
+            height: auto;
+            display: block;
+            z-index: 0;
+        }
+
+        .horizontal-line {
+            display: inline-block;
+            width: 62vw;
+            margin-left: 5vw;
+            height: 3px;
+            background-color: white;
+        }
+
+
+        .title_elements {
+            margin-left: 8%;
+            position: absolute;
+            left: 0;
+            color: white;
+            top: 10%;
+
+        }
+
+        .name {
+            font-size: 8vw;
+            margin-top: 15%;
+            text-align: center;
+        }
+
+        .landing_experience {
+            margin-top: 13%;
+        }
+
+        .landing_experience_title {
+            float: left;
+            width: 60%;
+        }
+
+        .landing_experience_button {
+            float: right;
+            padding: 20px;
+            font-size: 100%;
+            text-transform: uppercase;
+            border-radius: 2%;
+            background-color: #2E2E2E;
+            color: white;
+            margin-right: 10%;
+            width: 30%;
+            border-style: solid;
+            border-color: 2E2E2E;
+        }
+
+        /**
+        ----Social Icon Section ---
+        **/
+
+        .social_icons {
+            display: inline-block;
+            margin-left: 78vw;
+            margin-top: 2vw;
+        }
+
+        .fab {
+            font-size: 1.5vw;
+            position: inherit;
+            margin-right: 1vw;
+        }
+
+        /* Change icon color */
+        .social_icons i {
+            color: #2E2E2E;
+        }
+
+        /** Code for Navbar **/
+
+
+        .tech_debt_navbar {
+            width: 100vw;
+            background-color: #004AAD;
+            /* height: 5vh; */
+            margin: 0 auto;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            padding: 1vw;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            z-index: 100;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .tech_debt_navbar .navbar_items {
+            margin-left: 10%;
+            /* position: absolute; */
+            left: 0;
+            color: white;
+            font-size: 2vw;
+            display: block;
+        }
+
+
+        .navbar_items a {
+            margin-right: 5vw;
+            color: white;
+        }
+
+        .navbar_items a:hover {
+            color: blanchedalmond;
+        }
+
+
+        /** Code for Quote **/
+
+
+        .tech_debt_supporting_image {
+            position: relative;
+            width: 100vw;
+            margin-left: 50%;
+            /* Center horizontally */
+            transform: translateX(-50%);
+        }
+
+        .tech_debt_supporting_image img {
+            width: 100%;
+            display: block;
+            z-index: 0;
+        }
+
+
+        /** About section styling**/
+
+        .tech_debt_about {
+            z-index: 99;
+        }
+
+        .tech_debt_about_img {
+            float: left;
+            width: 35%;
+            margin-top: 4%;
+
+        }
+
+        .tech_debt_about_img h1 {
+            font-size: 4vw;
+            width: 60%;
+            margin-left: 20%;
+        }
+
+
+        .tech_debt_about_img img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 2vw;
+        }
+
+        .tech_debt_about {
+            margin-left: 50%;
+            transform: translateX(-50%);
+            position: relative;
+            width: 100vw;
+
+        }
+
+        .tech_debt_about_elements {
+            width: 80%;
+            justify-content: center;
+            margin-left: 50%;
+            transform: translateX(-50%);
+
+
+        }
+
+        .tech_debt_about_description {
+            float: right;
+            width: 50%;
+            margin-left: 5%;
+            margin-top: 3%;
+
+        }
+
+        .tech_debt_about h2 {
+            color: #2E2E2E;
+            font-size: 2vw;
+        }
+
+        .tech_debt_about p {
+            color: #2E2E2E;
+            font-size: 1.5vw;
+        }
+
+        .tech_debt_about_description button {
+            background-color: #2E2E2E;
+            font-size: 1.5vw;
+            color: white;
+            text-align: center;
+            margin-left: 0;
+            width: 40%;
+            margin-top: 3%;
+        }
+
+        .tech_debt_about_description button:hover {
+            background-color: #004AAD !important;
+        }
+
+        /** Skills Section **/
+        .tech_debt_skills_title {
+            float: left;
+            width: 30%;
+            display: block;
+
+
+        }
+
+        /** Skills Section **/
+        .skills_image {
+            width: 20%;
+
+        }
+
+        .tech_debt_skills_parent_container {
+            width: 100vw;
+        }
+
+        .tech_debt_skills_description {
+            float: right;
+            width: 50%;
+            display: block;
+        }
+    </style>
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const mentorship = document.querySelector('a[href="#mentorship"]');
+            const elements = ['about_me', 'skills', 'blog', 'FeaturedPost1']; // List of section IDs
+            const hashmap = {
+                "learn_more": "https://www.techdebtgyal.com/",
+                "resume": "https://drive.google.com/file/d/1RiJGs9Dy_55bVceF8K0BPp0_1ucnypmk/view?usp=sharing",
+                "braintrust": "https://app.usebraintrust.com/r/adriana110/"
+            };
+
+            externalResources(hashmap);
+
+            mentorship.addEventListener('click', () => {
+                alert('mentorship not yet available');
+            });
+
+            elements.forEach((sectionId) => {
+                const link = document.querySelector('a[href="#' + sectionId + '"]');
+                link.addEventListener('click', () => {
+                    scrollTo(sectionId);
+                });
+            });
+        });
+
+        function externalResources(hashmap) {
+            for (const key in hashmap) {
+                const element = document.getElementById(key);
+                element.addEventListener('click', () => {
+                    window.open(hashmap[key], '_blank');
+                });
+            }
+        }
+
+        function scrollTo(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+
+
+    </script>
+
+    <div class="tech_debt_navbar">
+        <div class="navbar_items">
+            <a href="#about_me">About Me</a>
+            <a href="#skills">My Skills</a>
+            <a href='#mentorship'>Mentorship</a>
+            <a href="#FeaturedPost1">Blog</a>
+        </div>
+
+    </div>
+    <div class="landing">
+        <img class="landing_img"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJWngRhGsLLqfH8FppHUYvdr2BMdLpW5r-EbdVRv96mMPsFF-JFMYL48KtvqOQezhzPX_YiBt__08LfAZqBUXKSHvdpEu0zLZl8O7GYt1sK4DtCjat1hvwK0_0h0gCht4rIKVxwsRfhQgX8-yTGj6Pw5euoGmX9BmwtHL0fd5SOWde2g/s1600/landing_image.png" />
+        <div class="title_elements">
+            <div>
+                <div class="social_icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-linkedin"></i>
+                </div>
+
+                <h2 class="landing_title">Software Engineer
+
+                    <span class='horizontal-line'></span>
+                </h2>
+                <h1 class="name">Adriana Lamb</h1>
+
+                <div class="landing_experience">
+                    <h2 class="landing_title landing_experience_title">
+                        Web Design, Full-Stack Development, Mentorship
+                    </h2>
+                    <button class="landing_experience_button" id="resume" style="margin-top: -40px;">
+                        Check Out My Resume
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="tech_debt_supporting_image">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEuZE9-4QIrqAIjUhE-msaOPdGUMQzdzCYknGwk2GpztiKAX0_SYWz8z2XlzXYXQpG_GP318z8iB3_24T6eVXeCv90a33ukazKbXdm_GOBU7eYexzgSy5smNCOw5DEhp33DhnI7xIxQVwa3tLgp9A2AQ52fRQxeLuJpcy54XEW0wcQRQ/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(3).png"" />
+    </div>
+
+    <div class=" tech_debt_about" id="about_me">
+
+        <div class="tech_debt_about_elements">
+            <div class="tech_debt_about_img">
+                <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFB9fXiKGzkrMPdhTFOuTKssCR0Cfzbixg4NtFSxXC73bCmlc9j06etfGGFUUpXC25_lo_3jQRUSi5ipTwwGY5N_t0-alQS7FiCGGaFHf0MF4Loehb0vtwYQfzE-pVI3mlmdSdufQ8E-y6YmmGrueq3AgZJk9O2r1Lpt0XwBHkezU/s1600/1689316949064%3Fe=1695859200&v=beta&t=FodHcH83psTJwapZs8p5gU1tpUbpUXJCF6WD5QA7Ey4">
+                </img>
+            </div>
+            <div class="tech_debt_about_description">
+                <h2>About Me</h2>
+                <p>I am a an experienced full-stack developer specializing in cybersecurity, AWS cloud engineering,
+                    Angular,
+                    and big data development. My expertise is complemented by a drive for continuous improvement.
+                    Attending
+                    various seminars and boot camps, my focus is on honing skills and enhancing my capabilities in
+                    coding
+                    and software development.</p>
+                <button id="braintrust">Join Me On Braintrust</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech_debt_supporting_image">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQMuYJUD8nx68CJ6SzKHFQCFErGIVnF1XTMVggWlkkOePmuWkIU1p_jFN1OhwbbKl6Y_SW0Bcl0lkNcAnpse4qrAzDtfUqZCiyXS42EmJz1Zcy23QW9LTfZe-kJjRS5L_TNhiCdDevwLHjH0Seud1hgN5Egb3z-3tARLNyI1QsE1_SmA/s1600/Clients.png"
+            alt="" />
+    </div>
+
+
+    <div class="tech_debt_about" id="skills">
+
+        <div class="tech_debt_about_elements ">
+            <div class="tech_debt_about_img" style="width:50%;">
+                <h1>Innovation That Flows</h1>
+                <img style="width: 60vw !important; margin-top:-5%; margin-bottom: 40%"
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhs7Oyq2h_Y2xPQ4B8TV59iiL4_JKac-VsueiXgWznPKUWDXTl8LiflbC0mSjzl4GQdxrUvVVmWK7qUC1I1kqRbFeKJRwQh9MgUpxymfMLq8UtDtL8rh3nFR55h1nKDdimkxw8xjxGE4aUQUbqa9AQDXn-5qWmcppeDPEQruliFA3x_3Q/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(2).png" />
+            </div>
+            <div class="tech_debt_about_description" style="width:45%; margin-top: 10%;">
+                <ul>
+                    <h2>Full-Stack developer</h2>
+                    <p>I offer Full-Stack Development expertise, blending front-end finesse with back-end efficiency.
+                        Skilled in HTML, CSS, JavaScript, Python, Node.js, and Java, I create intuitive interfaces and
+                        robust back-end solutions for optimized user experiences.</p>
+                </ul>
+                <ul>
+                    <h2>Responsive Designs</h2>
+                    <p>I specialize in comprehensive Full-Stack Development, seamlessly integrating front-end finesse
+                        with back-end efficiency. With expertise in HTML, CSS, and JavaScript, I craft intuitive
+                        interfaces that elevate user experiences.
+                    </p>
+                </ul>
+                <ul>
+                    <h2>Mentorship</h2>
+                    <p>As your programming mentor, I'm here to supercharge your skills. Through dynamic lessons and
+                        exciting projects, I'll propel your coding journey forward. Let's unleash your full potential
+                        and create amazing things together!</p>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .round_boarder_left {
+            float: left;
+            width: 45%;
+        }
+
+        .round_boarder_left h1 {
+            width: 100%;
+            font-size: 4vw;
+        }
+
+        .round_boarder_right img {
+            width: 120%;
+            margin-left: 40%;
+            transform: translateX(-50%);
+        }
+
+        .tech_debt_redirect {
+            width: 100vw;
+            position: relative;
+            /* Center horizontally */
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .tech_debt_round_boarder {
+            border-radius: 4%;
+            border-style: solid;
+            border-color: black;
+            width: 80%;
+            display: inline-block;
+            padding: 2%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+
+        }
+
+        .round_boarder_right {
+            float: right;
+            width: 55%;
+
+        }
+
+        .round_boarder_right h2 {
+            margin-top: 15%;
+            width: 70%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .round_boarder_right button {
+            width: 40%;
+            font-size: 2vw;
+            margin-left: 35%;
+            transform: translateX(-50%);
+            background-color: black;
+            color: white;
+            margin-top: 5%;
+        }
+
+        .round_boarder_right button:hover {
+            background-color: #004AAD;
+        }
+    </style>
+
+    <div class="tech_debt_redirect">
+        <div class="tech_debt_round_boarder">
+            <div class="round_boarder_left">
+                <h1>
+                    Tech spans beyond code, driving innovation in design, science, healthcare, and more.
+                </h1>
+
+            </div>
+            <div class="round_boarder_right">
+                <img
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2Ub94kfmC4bxnpUxLTeL6H7XgEMaYtzEwx1MNlH4mLHRu-NYyJs1R9wd_xSdkuL8fpmuWWc2xpCygGDSLNvt__duQgB1jm9mVjkUtxx5Mj_VPbPwKtqX-X3Wu_FzGofQHZbW2zBBcH_DXkLYxliJAoPi6Asn5ekYRrk24lscFjhhb8A/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(4).png">
+                <h2>Psst...I also have another blog specifically focused on teaching YOU more about programming</h2>
+                <button id="learn_more">Learn More!</button>
+                </img>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <!-- Add the Font Awesome stylesheet link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-Pv0uBz4cowWOr1lkFnd0TGdK0BY5XszpN7xZ7fvcYzB9jqvYYKFa0R2m8j7fFpxm" crossorigin="anonymous" />
+</body>
