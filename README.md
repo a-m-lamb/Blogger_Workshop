@@ -6,7 +6,7 @@
 
 Welcome to the **Build Your Portfolio with Blogger** repository! If you're a budding developer eager to flaunt your skills and projects, this comprehensive guide is your ticket to crafting a personalized portfolio website using Blogger, Google's user-friendly blogging platform.
 
-## 🚀 Why Opt for Blogger?
+## 🚀 Why Opt for Bloggesr?
 
 Blogger's simplicity and accessibility make it a perfect choice for your portfolio. Say goodbye to complex coding – focus on displaying your work seamlessly with Blogger's intuitive interface.
 
@@ -20,10 +20,9 @@ Blogger's simplicity and accessibility make it a perfect choice for your portfol
 
 ## 🌐 Getting Started:
 
-1. **Fork this Repository:** Begin by forking this repository to your GitHub account.
-2. **Follow the Tutorials:** Navigate to your blogger dashboard < Theme < Customize Dropdown < Restore, and upload one of the xml files from the utils package. The standard_tech_debt_portfolio.xml file will give you an exact copy of my portfolio theme!
-3. **Personalize Your Site:** Tailor templates, layouts, and content to infuse your portfolio with your unique style.
-4. **Share Your Triumph:** Once your portfolio is polished, save it on Blogger and broadcast your link to the world!
+1. **Follow the Tutorials:** Navigate to your blogger dashboard < Theme < Customize Dropdown < Restore, and upload one of the xml files from the utils package. The standard_tech_debt_portfolio.xml file will give you an exact copy of my portfolio theme!
+2. **Personalize Your Site:** Tailor templates, layouts, and content to infuse your portfolio with your unique style.
+3. **Share Your Triumph:** Once your portfolio is polished, save it on Blogger and broadcast your link to the world!
 
 ## 🤝 Contributions and Feedback:
 
