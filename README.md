@@ -21,9 +21,9 @@ Blogger's simplicity and accessibility make it a perfect choice for your portfol
 ## 🌐 Getting Started:
 
 1. **Fork this Repository:** Begin by forking this repository to your GitHub account.
-2. **Follow the Tutorials:** Delve into the tutorials in the `tutorials` folder to commence building your portfolio step by step.
-3. **Personalize Your Site:** Tailor templates, layouts, and content to infuse your portfolio with your unique essence.
-4. **Share Your Triumph:** Once your portfolio is polished, publish it on Blogger and broadcast your link to the world!
+2. **Follow the Tutorials:** Navigate to your blogger dashboard < Theme < Customize Dropdown < Restore, and upload one of the xml files from the utils package. The standard_tech_debt_portfolio.xml file will give you an exact copy of my portfolio theme!
+3. **Personalize Your Site:** Tailor templates, layouts, and content to infuse your portfolio with your unique style.
+4. **Share Your Triumph:** Once your portfolio is polished, save it on Blogger and broadcast your link to the world!
 
 ## 🤝 Contributions and Feedback:
 
@@ -35,5 +35,6 @@ Experienced developers, your input is invaluable! Contribute improvements or add
 - [Google Account](https://accounts.google.com)
 - [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
 - [GitHub Guide](https://guides.github.com/)
+- [Example Portfolio] (https://adrianalamb.blogspot.com/#mentorship)
 
 Embark on your coding journey by crafting a portfolio that illuminates your capabilities and accomplishments. Let's make your digital presence shine!
