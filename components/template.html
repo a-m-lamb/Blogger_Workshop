@@ -5,6 +5,7 @@
 
 <body>
     <style>
+
         button:hover {
             background-color: #004AAD;
         }
@@ -97,6 +98,10 @@
             font-size: 1.5vw;
             position: inherit;
             margin-right: 1vw;
+        }
+
+        .fab:hover{
+            color: #004AAD;
         }
 
         /* Change icon color */
@@ -268,6 +273,12 @@
         document.addEventListener('DOMContentLoaded', () => {
             const mentorship = document.querySelector('a[href="#mentorship"]');
             const elements = ['about_me', 'skills', 'blog', 'FeaturedPost1']; // List of section IDs
+            const socials = {
+                "facebook": "https://www.facebook.com/techygal",
+                "linkedin": "https://www.linkedin.com/in/adriana-l-938a51146/",
+                "github": "https://github.com/a-m-long",
+                "instagram": "https://www.instagram.com/techdebtgyal/"
+            }
             const hashmap = {
                 "learn_more": "https://www.techdebtgyal.com/",
                 "resume": "https://drive.google.com/file/d/1RiJGs9Dy_55bVceF8K0BPp0_1ucnypmk/view?usp=sharing",
@@ -275,6 +286,7 @@
             };
 
             externalResources(hashmap);
+            externalResources(socials)
 
             mentorship.addEventListener('click', () => {
                 alert('mentorship not yet available');
@@ -323,10 +335,10 @@
         <div class="title_elements">
             <div>
                 <div class="social_icons">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-facebook-f" id="facebook"></i>
+                    <i class="fab fa-github" id="github"></i>
+                    <i class="fab fa-instagram" id="instagram"></i>
+                    <i class="fab fa-linkedin" id="linkedin"></i>
                 </div>
 
                 <h2 class="landing_title">Software Engineer
