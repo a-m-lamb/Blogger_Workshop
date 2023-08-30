@@ -6,7 +6,7 @@
 
 Welcome to the **Build Your Portfolio with Blogger** repository! If you're a budding developer eager to flaunt your skills and projects, this comprehensive guide is your ticket to crafting a personalized portfolio website using Blogger, Google's user-friendly blogging platform.
 
-## 🚀 Why Opt for Bloggesr?
+## 🚀 Why Opt for Blogger?
 
 Blogger's simplicity and accessibility make it a perfect choice for your portfolio. Say goodbye to complex coding – focus on displaying your work seamlessly with Blogger's intuitive interface.
 
