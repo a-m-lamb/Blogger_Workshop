@@ -5,11 +5,9 @@
 
 <body>
     <style>
-
         button:hover {
             background-color: #004AAD;
         }
-
 
         .landing_title {
             font-size: 2vw;
@@ -100,7 +98,7 @@
             margin-right: 1vw;
         }
 
-        .fab:hover{
+        .fab:hover {
             color: #004AAD;
         }
 
@@ -272,7 +270,7 @@
 
         document.addEventListener('DOMContentLoaded', () => {
             const mentorship = document.querySelector('a[href="#mentorship"]');
-            const elements = ['about_me', 'skills', 'blog', 'FeaturedPost1']; // List of section IDs
+            const elements = ['about_me', 'skills', 'mentorship', 'FeaturedPost1']; // List of section IDs
             const socials = {
                 "facebook": "https://www.facebook.com/techygal",
                 "linkedin": "https://www.linkedin.com/in/adriana-l-938a51146/",
@@ -401,7 +399,7 @@
         <div class="tech_debt_about_elements ">
             <div class="tech_debt_about_img" style="width:50%;">
                 <h1>Innovation That Flows</h1>
-                <img style="width: 60vw !important; margin-top:-5%; margin-bottom: 40%"
+                <img style="width: 60vw !important; margin-top:-5%; margin-bottom: 10%"
                     src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhs7Oyq2h_Y2xPQ4B8TV59iiL4_JKac-VsueiXgWznPKUWDXTl8LiflbC0mSjzl4GQdxrUvVVmWK7qUC1I1kqRbFeKJRwQh9MgUpxymfMLq8UtDtL8rh3nFR55h1nKDdimkxw8xjxGE4aUQUbqa9AQDXn-5qWmcppeDPEQruliFA3x_3Q/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(2).png" />
             </div>
             <div class="tech_debt_about_description" style="width:45%; margin-top: 10%;">
@@ -430,8 +428,146 @@
         </div>
     </div>
 
+    <div class="tech_debt_mentorship" id="mentorship">
+
+        <div class="statement section1">
+            <h1>"In a world of algorithms and lines of code, remember that <b class="tech_debt_bold">YOU</b> are the
+                true source of innovation."</h1>
+            <p>I approach my work as a full-stack developer with enthusiasm, curiosity, and a drive to achieve
+                excellence. Over 5 rewarding years in technology consulting, I have been fortunate enough to serve
+                clients around the world, advise startups, and play an instrumental role in some of the most
+                cutting-edge digital innovation projects. With vast experience in cybersecurity, cloud engineering,
+                front-end design, and big data solutions, I am thrilled to constantly be learning and honing my skills
+                for the sake of delivering outstanding results for my clients. Technology is empowering me to make a
+                real impact through inspired design decisions!
+
+            </p>
+        </div>
+
+        <div class="transparent_overflow_element">
+            <div class="tech_debt_round_boarder skills_list">
+                <ul>
+                    <h2>Front-End Development</h2>
+                    <li>Angular</li>
+                    <li>React</li>
+                    <li>Django</li>
+                    <li>Bootstrap</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Typescript</li>
+                </ul>
+                <ul>
+                    <h2>Back-End Development</h2>
+                    <li>Java</li>
+                    <li>Go</li>
+                    <li>SQL</li>
+                    <li>Spark</li>
+                    <li>Posgres</li>
+                    <li>DynamoDB</li>
+                    <li>C#</li>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>Maven</li>
+                    <li>Gradle</li>
+                </ul>
+                <ul>
+                    <h2>DevOps</h2>
+                    <li>AWS</li>
+                    <li>GoCD</li>
+                    <li>Jenkins</li>
+                    <li>Terraform</li>
+                    <li>Veracode</li>
+                    <li>Nexus</li>
+                    <li>Sonatype</li>
+                    <li>WinSCP</li>
+                    <li>Putty</li>
+                    <li>Linux</li>
+                    <li>Makefile</li>
+                    <li>Bash</li>
+                </ul>
+            </div>
+        </div>
+        <img style=" width:100vw; position:relative; z-index: -100; margin-left: 50%; transform: translateX(-50%); margin-top: -18%;"
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzBQOyf4kvadco_deugE-cdAZZ8HEb5rwom-4zC9WppqY4-VfKWWkVNXID4xb2WioNYL50scfrq-Qydq9xLLfbUl1yCdXjwdDbgE248HJ7tkkyLxohdUYQjWKDG058gIx5QMFTWtBuUcF62wi11znjXz6PCIe1R7UkkUE6NUwVCezRew/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(5).png">
+
+        <div class="statement section2" id="mentorship">
+            <h1>Let's Talk!</h1>
+            <p>Have any project ides? Looking to kickstart your career in tech? <a href="https://calendly.com/adriana-michelle-long" class="tech_debt_bold" target="_blank">Schedule time with me to talk!</a></p>
+        </div>
+      
+
+    </div>
+
 
     <style>
+        .tech_debt_bold {
+            color: #004AAD;
+            font-weight: bolder;
+        }
+
+        .statement.section1 {
+            text-align: center;
+            margin-top: 30%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            width: 85vw;
+
+        }
+
+        .statement.section1 h1 {
+            font-size: 3vw;
+        }
+
+        .skills_list h2 {
+            font-size: 2.5vw;
+            color: #004AAD;
+        }
+
+        .statement.section1 p,
+        li {
+            font-size: 2vw;
+            text-align: justify;
+            margin: 5%;
+
+        }
+
+        ul {
+            list-style: none;
+        }
+
+
+        li::before {
+            font-family: 'Font Awesome 5 Free';
+            content: "\261B";
+            color:#004AAD;
+            margin-right: 10px;
+        }
+
+
+        .statement.section1 h1 {
+            margin-top: 70%;
+        }
+
+
+        .statement.section2 {
+            background-color: #E2C385;
+            width: 100vw;
+            padding-top: 3%;
+            position: relative;
+            z-index: -1;
+            padding-bottom: 10%;
+            margin-bottom: -5%;
+            margin-top: -8%;
+        }
+
+        .tech_debt_mentorship {
+            margin-top: 10%;
+            text-align: center;
+            width: 100vw;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+
         .round_boarder_left {
             float: left;
             width: 45%;
@@ -454,6 +590,8 @@
             /* Center horizontally */
             margin-left: 50%;
             transform: translateX(-50%);
+            background-color: #E2C385;
+
         }
 
         .tech_debt_round_boarder {
@@ -466,6 +604,17 @@
             margin-left: 50%;
             transform: translateX(-50%);
 
+        }
+
+        .tech_debt_round_boarder.skills_list {
+            display: flex;
+            width: 75%;
+            text-align: left;
+            background-color: white;
+        }
+
+        .skills_list ul{
+            width: 30%;
         }
 
         .round_boarder_right {
@@ -515,6 +664,11 @@
 
         </div>
     </div>
+
+    <img style="width:100vw; margin-left: 50%; transform: translateX(-50%);"
+    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjC38lPoT0kPNMSPon1EHQjGjkcnQsI3q2SDMVxUFDdNM5jGRDENiG5Y5ndKD0_oTRNowuzGrT0Uot1Gm8J3OzTWEqaTjrq29FH0RtQs9gjTLVUW6hPeKOq1lvBxQGezZI6q7-giBLEs2lhXCdwDGA7lLPm3D_PHJ8_ZAMXQORmtXbKNw/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(6).png">
+
+
 
 
 
