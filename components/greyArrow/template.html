@@ -381,8 +381,8 @@
             padding: 10px;
             color: black;
             border-radius: 10%;
-
-
+            position: relative;
+            z-index: 1000;
         }
 
         .landing_bottom_elements button:hover {
@@ -424,7 +424,6 @@
             var form = document.querySelector('form');
             form.action = 'https://' + hostname + '/search';
 
-
             externalResources(hashmap);
             externalResources(socials);
 
@@ -440,7 +439,6 @@
                 for (let mar of margins) {
                     mar.style.marginTop = "10%";
                 }
-
             }
 
             elements.forEach((sectionId) => {
@@ -454,9 +452,13 @@
         function externalResources(hashmap) {
             for (const key in hashmap) {
                 const element = document.getElementById(key);
-                element.addEventListener('click', () => {
-                    window.open(hashmap[key], '_blank');
-                });
+                if (element) {
+                    element.addEventListener('click', () => {
+                        window.open(hashmap[key], '_blank');
+                    });
+                } else{
+                    console.log(`looks like this element: ${element} does not exist`)
+                }
             }
         }
 
