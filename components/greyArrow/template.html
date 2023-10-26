@@ -5,13 +5,39 @@
 
 <body>
     <style>
+        body {
+            font-family: monospace;
+            background-color: #30152E !important;
+        }
+
         button:hover {
-            background-color: #004AAD;
+            background-color: #30152E;
+        }
+
+        .bulletPoint {
+            margin-top: 10%;
+
         }
 
         .landing_title {
-            font-size: 2vw;
-            margin-top: -1.5vw;
+            font-size: 9vw;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: -8%;
+            font-weight: 100;
+            float: right;
+            margin-right: 16%;
+        }
+
+        .horizontal-line {
+            width: 300px;
+            margin-left: 20%;
+            height: 3px;
+            background-color: white;
+            float: right;
+        }
+
+        .landing_title .highlightBlue {
+            font-size: 7vw;
         }
 
         .landing {
@@ -20,67 +46,20 @@
             overflow: hidden;
             text-transform: uppercase;
             margin-left: 50%;
-            /* Center horizontally */
             transform: translateX(-50%);
-            margin-bottom: 0 !important;
-            /* Adjust for centering */
-            height: auto;
-            margin-top: 3%;
-        }
+            height: 70vw;
 
-        .landing_img {
-            width: 100%;
-            height: auto;
-            display: block;
-            z-index: 0;
         }
-
-        .horizontal-line {
-            display: inline-block;
-            width: 62vw;
-            margin-left: 5vw;
-            height: 3px;
-            background-color: white;
-        }
-
 
         .title_elements {
-            margin-left: 8%;
+            margin-left: 4%;
             position: absolute;
             left: 0;
             color: white;
-            top: 10%;
+            top: 15%;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
-        }
 
-        .name {
-            font-size: 8vw;
-            margin-top: 15%;
-            text-align: center;
-        }
-
-        .landing_experience {
-            margin-top: 13%;
-        }
-
-        .landing_experience_title {
-            float: left;
-            width: 60%;
-        }
-
-        .landing_experience_button {
-            float: right;
-            padding: 20px;
-            font-size: 100%;
-            text-transform: uppercase;
-            border-radius: 2%;
-            background-color: #2E2E2E;
-            color: white;
-            margin-right: 10%;
-            width: 30%;
-            border-style: solid;
-            border-color: #2E2E2E;
-            margin-bottom: 10%;
         }
 
         /**
@@ -99,57 +78,73 @@
         }
 
         .fab:hover {
-            color: #004AAD;
+            color: #e6e0e5;
             opacity: 0.8;
         }
 
         /* Change icon color */
         .social_icons i {
-            color: #2E2E2E;
+            color: #F63562;
+
         }
 
         /** Code for Navbar **/
 
-
         .tech_debt_navbar {
-            width: 100vw;
-            background-color: #004AAD;
+            /* width: 100vw; */
+            background-color: transparent;
             /* height: 5vh; */
             margin: 0 auto;
-            margin-left: 50%;
-            transform: translateX(-50%);
+            /* margin-left: 50%;
+            transform: translateX(-50%); */
             padding: 1vw;
             position: fixed;
             left: 0;
             right: 0;
             top: 0;
             z-index: 100;
-            margin-left: 50%;
-            transform: translateX(-50%);
+
         }
 
         .tech_debt_navbar .navbar_items {
-            margin-left: 10%;
-            left: 0;
             color: white;
-            font-size: 2vw;
+            font-size: 1.5vw;
             display: block;
+            float: right;
+            margin-right: -19%;
         }
 
-
         .navbar_items a {
-            margin-right: 5vw;
+            margin-right: 2vw;
             color: white;
+            text-decoration: none;
         }
 
         .navbar_items a:hover {
             color: blanchedalmond;
         }
 
+        .left_side_navbar {
+            width: 60%;
+        }
+
+        .logo {
+            float: left;
+            width: 60px;
+        }
+
+        .logo_section h2 {
+            float: right;
+            color: white;
+            font-size: 1vw;
+        }
+
+        .logo_section {
+            float: left;
+            /* width: 60px; */
+        }
 
         /** Code for Quote **/
-
-
         .tech_debt_supporting_image {
             position: relative;
             width: 100vw;
@@ -181,13 +176,14 @@
             font-size: 4vw;
             width: 60%;
             margin-left: 20%;
+            color: #A4A5B1;
         }
-
 
         .tech_debt_about_img img {
             width: 100%;
             height: auto;
             margin-bottom: 2vw;
+            border-radius: 50%;
         }
 
         .tech_debt_about {
@@ -203,8 +199,6 @@
             justify-content: center;
             margin-left: 50%;
             transform: translateX(-50%);
-
-
         }
 
         .tech_debt_about_description {
@@ -214,12 +208,6 @@
             margin-top: 3%;
 
         }
-
-        .tech_debt_about_description .highlightBlue {}
-
-        /* .tech_debt_about .highlightBlue {
-            font-size: 3vw;
-        } */
 
         .tech_debt_about p {
             color: #2E2E2E;
@@ -238,7 +226,7 @@
         }
 
         .tech_debt_about_description button:hover {
-            background-color: #004AAD !important;
+            background-color: #30152E !important;
         }
 
         /** Skills Section **/
@@ -246,8 +234,15 @@
             float: left;
             width: 30%;
             display: block;
+        }
 
+        .bulletPoint {
+            list-style: none;
+        }
 
+        .bulletPoint::before {
+            color: #F63562;
+            margin-right: 10%;
         }
 
         /** Skills Section **/
@@ -271,18 +266,26 @@
         }
 
         .tech_debt_search {
-            margin-top: -2%;
+            margin-top: -1.5%;
             color: #E2C385;
             display: inline-flex;
-            width: 20vw !important;
+            width: 13vw !important;
             float: right;
-            margin-right: 6%;
             background-color: #E8E5E3 !important;
             border-radius: 3%;
+            font-size: 5px;
+            margin-left: 15%;
+
         }
 
         .search-input {
             margin-left: 10%;
+            font: normal 400 11px Montserrat, sans-serif;
+
+        }
+
+        .search-input .input {
+            font: normal 400 11px Montserrat, sans-serif;
         }
 
         .tech_debt_btn {
@@ -309,8 +312,66 @@
             transform: translateX(-50%);
         }
 
-        .item-view.widget.Blog.post{
+        .item-view.widget.Blog.post {
             width: 90%;
+        }
+
+        .floating-element {
+            animation: float 3s infinite;
+        }
+
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        .landing_bottom_elements {
+            top: 10%;
+        }
+
+        .landing_bottom_elements h2 {
+            float: left;
+            font-size: 2vw;
+            width: 20%;
+            margin-top: 10%;
+            font-weight: lighter;
+            margin-left: 8%;
+
+
+        }
+
+        .landing_bottom_elements button {
+            float: right;
+            font-size: 2vw;
+            margin-top: 9%;
+            font-weight: lighter;
+            font-family: monospace;
+            padding: 10px;
+            color: black;
+            border-radius: 10%;
+
+
+        }
+
+        .landing_bottom_elements button:hover {
+            background-color: #F63562;
+        }
+
+        .arrow {
+            z-index: -2;
+            /* width: 50%; */
+        }
+
+        p {
+            color: white !important;
         }
     </style>
 
@@ -326,8 +387,8 @@
                 "instagram": "https://www.instagram.com/techdebtgyal/"
             }
             const hashmap = {
-                "learn_more": "https://www.techdebtgyal.com/",
-                "resume": "https://drive.google.com/file/d/1RiJGs9Dy_55bVceF8K0BPp0_1ucnypmk/view?usp=sharing",
+                "learn_more": "https://discord.gg/tZ4FNkgdvE",
+                "discord": "https://discord.gg/tZ4FNkgdvE",
                 "braintrust": "https://app.usebraintrust.com/r/adriana110/"
             };
 
@@ -377,7 +438,7 @@
 
         function scrollTo(sectionId) {
 
-            const home = "https://adrianalamb.blogspot.com/"
+            const home = "https://www.techdebtgyal.com/"
             const currentPath = window.location.pathname;
             const element = document.getElementById(sectionId);
 
@@ -394,15 +455,21 @@
     </script>
 
     <div class="tech_debt_navbar">
-        <div class="navbar_items">
-            <a href="#about_me">About Me</a>
-            <a href="#skills">My Skills</a>
-            <a href='#mentorship'>Mentorship</a>
-            <a href="#FeaturedPost1">Blog</a>
+        <div class="left_side_navbar">
+            <div class="logo_section">
+                <img class="logo"
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7Qn6gYqY2shs-Q3h5KPh92FOslcXmzXsH-6VHSNFNjw0JGnBF7EEd0hDNXtQFdAW1Rd3lV8gJvFWnUBLlnapuyx-Z_b_c0EP-zReYE3BjC_RTSTGCk3RjhbcKuAZIpiJ8TInLWxteyW9SHYmOmeQBmWIG-cZ7BBg_Tz3wJxfo4N0Ynug/s1600/Typography%20Initial%20Letter%20Brand%20Logo.png">
+                <h2>[Your Name]</h2>
+            </div>
+            <div class="navbar_items">
+                <a href="#about_me">About Me</a>
+                <a href="#skills">My Skills</a>
+                <a href='#mentorship'>Mentorship</a>
+                <a href="#FeaturedPost1">Blog</a>
+            </div>
         </div>
 
         <form action="search" target="_top" class="tech_debt_search" id="search_functionality">
-            <!-- <input class="search-action" type="submit" value="Search"> -->
             <div class="search-input">
                 <input aria-label="Search this blog" autocomplete="off" name="q" placeholder="Search My Blog" value="">
             </div>
@@ -414,8 +481,9 @@
     <div class="tech_debt_main">
 
         <div class="landing">
-            <img class="landing_img"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJWngRhGsLLqfH8FppHUYvdr2BMdLpW5r-EbdVRv96mMPsFF-JFMYL48KtvqOQezhzPX_YiBt__08LfAZqBUXKSHvdpEu0zLZl8O7GYt1sK4DtCjat1hvwK0_0h0gCht4rIKVxwsRfhQgX8-yTGj6Pw5euoGmX9BmwtHL0fd5SOWde2g/s1600/landing_image.png" />
+            <img class="arrow" style="z-index: -10;"
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVsEu9BHPibrgxMgQa36gYouocSynhakmDZhju7YsVMz80cFgjGHQT9bxZJ9yQu7hLb8_hizjUpvj9kyP6Wa3_LF3b4k3tWZt7pw6ue5hViZ6e-22iG3mP1EKqVjYERRthvaTJMraVd9-u2oqDfZX3_Rj7PH4TB8l4E1uIJDEoa8uOa1s/s1600/Tech%20Website%20in%20Neon%20Pink%20Violet%20Green%20Gradients%20Style%20(1).png">
+
             <div class="title_elements">
                 <div>
                     <div class="social_icons">
@@ -425,21 +493,21 @@
                         <i class="fab fa-linkedin" id="linkedin"></i>
                     </div>
 
-                    <h2 class="landing_title">Software Engineer
-
-                        <span class='horizontal-line'></span>
-                    </h2>
-                    <h1 class="name">Adriana Lamb</h1>
-
-                    <div class="landing_experience">
-                        <h2 class="landing_title landing_experience_title">
-                            Web Design, Full-Stack Development, Mentorship
+                    <li class="bulletPoint">
+                        <h2 class="landing_title">Hi, I'm
+                            <br>
+                            <b class="highlightBlue"> [Insert Name] +</b>
                         </h2>
-                        <button class="landing_experience_button" id="resume" style="margin-top: -40px;">
-                            Check Out My Resume
-                        </button>
-
+                        <!-- <span class="horizontal-line"></span> -->
+                    </li>
+                    <div class="landing_bottom_elements">
+                        <h2>Welcome to my website</h2>
+                        <button style="z-index: 100;">Learn More</button>
+                        <img style="width: 115%; margin-left:-10%; position: absolute; z-index: 1; margin-top:3%"
+                            class="hand"
+                            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLOGimOmB0AfTrvC5Ksvd-frM3fO2rsf0laOQFB6UucjYO0O4w3k7Il0oqQwUKveViqZTloXRflUSfkMGIjGOY2IZAb1OJfxe9G5KIUBXvbq08diHVw3ayA_cYxMgC5Gb4IKnhiUCMwvbCa-KH9E-EtBJYnV10euACwNoFgIGTPWigYMA/s1600/Tech%20Website%20in%20Neon%20Pink%20Violet%20Green%20Gradients%20Style%20(2).png">
                     </div>
+                    <br>
 
                 </div>
             </div>
@@ -447,7 +515,7 @@
 
         <div class="tech_debt_supporting_image">
             <img
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTtJEpSR50BKp7lb4gfDWvKMx-BVgAcWfMFSjn90NrpVs2a3cZYAVtTEDSljnLG7RI1EeHbNjSlzytD2xye7ivTbUpiKpiWSDeU7zdNMbpspwtvQkHqqIY41vB1_C6nC2E7ALGTo7ArisYWFB_5BWAjDMavt7SBTdFEP-IlJXwUPOm2Q/s1600/Adriana_Lamb_Template.png" />
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBfodgZwyIKcjGdZ4xXfOJnsNuyYP2ucfJrLRzy5tMaDrn0cOuf7MXmHNiL6aZHpCPEj4N2t5tsTyTNDDd_I0ITajMw9TFpF7TvPSU1x-Ra5-oEdGs1E-Dh2lbp59b9fQm9JLhCsjPlwdysQrGwLVfRrdGxSkhv_7el9gBDKmypD-OPxE/s1600/Copy%20of%20Adriana_Lamb_Template%20(1).png" />
         </div>
 
         <div class=" tech_debt_about" id="about_me">
@@ -459,7 +527,7 @@
                     </img>
                 </div>
                 <div class="tech_debt_about_description">
-                    <h2 class="highlightBlue">About Me</h2>
+                    <h2 class="highlightBlue">Hi, I'm Adriana</h2>
                     <p>I am a an experienced full-stack developer specializing in cybersecurity, AWS cloud engineering,
                         Angular,
                         and big data development. My expertise is complemented by a drive for continuous improvement.
@@ -473,7 +541,7 @@
         </div>
 
         <div class="tech_debt_supporting_image">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip_09X72-MTN-bsDDV70Et_weBad6oNNoDvBgt9ZDpUh-lkdmCUTlKQpUtAU2jeSAfAX7hJZ_YuJ1YkXabBffedCeZwMCJB2uzuPQPLr08ssjQpaEBxi9FTHE_Ne2huv-Z2mSTw9p-ViubB8Ub1IdXarvfjaCCQD68MHxGTLPOfVvv9w/s1600/Adriana_Lamb_Template%20(1).png"
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiJLTD_AUvm4_aHdSig-8PRlJI8XW-8p-PbPJVfRldvxgThpeUKyu4Ay5bHx3qdJUGC9_x9ky_tIRM5e9TnuK00CNefBHHhe0N831ZB5VyEY8WD9gPf8HtAYfUA8J5qqj9xDLmtxj4zQeOdecUWugHHxBQya12EFp45MJwC3Ttzo9mE37E/s1600/Copy%20of%20Adriana_Lamb_Template%20(4).png"
                 alt="" />
         </div>
 
@@ -486,7 +554,7 @@
                 <div class="tech_debt_about_img" style="width:50%;">
                     <h1>Innovation That Flows</h1>
                     <img style="width: 60vw !important; margin-top:-5%; margin-bottom: 10%"
-                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhs7Oyq2h_Y2xPQ4B8TV59iiL4_JKac-VsueiXgWznPKUWDXTl8LiflbC0mSjzl4GQdxrUvVVmWK7qUC1I1kqRbFeKJRwQh9MgUpxymfMLq8UtDtL8rh3nFR55h1nKDdimkxw8xjxGE4aUQUbqa9AQDXn-5qWmcppeDPEQruliFA3x_3Q/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(2).png" />
+                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRoqAzQXWQ_TjCn6Cmu_2U1Hm_9pcX2vP6GKITfvFncD1fu3aGYwcpMom38wfunL5Rod1qia3u_0_3i2zUi2sw_Sjv4sG8EQ2QJGXp_YMdvw2a0tf1W9dCkoiE-wqRYjdcSbYcnO2H2OW9GVlucq6PYEE_NLTxBPq-2VdDi3WIzvjrbic/s1600/Copy%20of%20Adriana_Lamb_Template%20(6).png" />
                 </div>
                 <div class="tech_debt_about_description" style="width:45%; margin-top: 10%;">
                     <ul>
@@ -537,6 +605,8 @@
             </div>
 
             <div class="transparent_overflow_element">
+                <img class="point"
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv0zeamM_CSXAbs60wkwspZ2FWw1530UmebgfjXrsVqjAtwG8bNg2qRkpSkyilWO74BlsQNx2F3eaQ3mqofC6jraIckxJdLczPprG6NjPtlbL-lxmw-wp__Qr9RpsgImZGB_nol6EHuhONl3m4PQ0V7HCZeRCXGF-F4SOfDov2RkDuhJA/s1600/Copy%20of%20Adriana_Lamb_Template%20(5).png">
                 <div class="tech_debt_round_boarder skills_list">
                     <ul>
                         <h2 class="highlightBlue">Front-End Development</h2>
@@ -580,12 +650,12 @@
                 </div>
             </div>
             <img style=" width:100vw; position:relative; z-index: -100; margin-left: 50%; transform: translateX(-50%); margin-top: -18%;"
-                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjzBQOyf4kvadco_deugE-cdAZZ8HEb5rwom-4zC9WppqY4-VfKWWkVNXID4xb2WioNYL50scfrq-Qydq9xLLfbUl1yCdXjwdDbgE248HJ7tkkyLxohdUYQjWKDG058gIx5QMFTWtBuUcF62wi11znjXz6PCIe1R7UkkUE6NUwVCezRew/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(5).png">
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaYuVB0FvVw6jTb21QbfkmwAAEKEcB1pRjCZW-edlCV5pYjGOigxjaR2EvDSipOdCXyBBRHGjRYUE9egLzxA8tT2p5SctSRzueTbmyrY7ZPC20B3gUoWdgeziW12xduWE-C2Mb9yrgBZzBlW2gp2KUFUVSGUBbxiwrH6A0czM5uspV6Ks/s1600/Copy%20of%20Adriana_Lamb_Template%20(2).png">
 
             <div class="statement section2" id="mentorship">
                 <div style="width: 80%; margin-left: 50%; transform: translateX(-50%);">
                     <h1>Let's Talk!</h1>
-                    <p>Have any project ides? Looking to kickstart your career in tech? <a
+                    <p>Have any project ideas? Looking to kickstart your career in tech? <a
                             href="https://calendly.com/adriana-michelle-long" class="highlightBlue"
                             target="_blank">Schedule
                             time with me to talk!</a></p>
@@ -597,7 +667,7 @@
 
         <style>
             .highlightBlue {
-                color: #004AAD !important;
+                color: #F63562 !important;
                 font-weight: bolder;
             }
 
@@ -618,20 +688,28 @@
 
             .statement.section1 p,
             li {
-                font-size: 2vw;
+                font-size: 1.5vw;
                 text-align: justify;
                 margin: 5%;
+                /* animation: float 3s infinite; */
+
             }
+
+            .skills_list li {
+
+                animation: float 3s infinite;
+
+            }
+
 
             ul {
                 list-style: none;
             }
 
-
             li::before {
                 font-family: 'Font Awesome 5 Free';
-                content: "\261B";
-                color: #004AAD;
+                content: "\263B";
+                color: #30152E;
                 margin-right: 10px;
             }
 
@@ -639,8 +717,10 @@
 
 
 
+
+
             .statement.section2 {
-                background-color: #E2C385;
+                background-color: #A4A5B1;
                 width: 100vw;
                 padding-top: 3%;
                 position: relative;
@@ -681,7 +761,9 @@
                 /* Center horizontally */
                 margin-left: 50%;
                 transform: translateX(-50%);
-                background-color: #E2C385;
+                background-color: #A4A5B1;
+                padding-bottom: 10%;
+
 
             }
 
@@ -699,9 +781,30 @@
 
             .tech_debt_round_boarder.skills_list {
                 display: flex;
-                width: 75%;
+                width: 50%;
                 text-align: left;
                 background-color: white;
+                position: absolute;
+                margin-left: 70%;
+                margin-top: -80%;
+            }
+
+            .tech_debt_round_boarder.skills_list h2 {
+                font-size: 2vw;
+               
+            }
+
+
+            .point {
+                width: 130%;
+                margin-left: -13%;
+                margin-top: 20%;
+                z-index: -1000;
+                position: relative;
+            }
+
+            .tech_debt_round_boarder img {
+                float: left;
             }
 
             .skills_list ul {
@@ -722,6 +825,8 @@
                 font-size: 2.3vw;
             }
 
+
+
             .round_boarder_right button {
                 width: 40%;
                 font-size: 2vw;
@@ -734,12 +839,13 @@
             }
 
             .round_boarder_right button:hover {
-                background-color: #004AAD;
+                background-color: #30152E;
             }
 
             .tech_debt_header {
                 font-size: 3vw;
                 font-weight: bolder;
+                color: #A4A5B1;
             }
         </style>
 
@@ -753,8 +859,8 @@
                 </div>
                 <div class="round_boarder_right">
                     <img
-                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2Ub94kfmC4bxnpUxLTeL6H7XgEMaYtzEwx1MNlH4mLHRu-NYyJs1R9wd_xSdkuL8fpmuWWc2xpCygGDSLNvt__duQgB1jm9mVjkUtxx5Mj_VPbPwKtqX-X3Wu_FzGofQHZbW2zBBcH_DXkLYxliJAoPi6Asn5ekYRrk24lscFjhhb8A/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(4).png">
-                    <h2>Psst...I also have another blog specifically focused on teaching <b class="highlightBlue">
+                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaYuVB0FvVw6jTb21QbfkmwAAEKEcB1pRjCZW-edlCV5pYjGOigxjaR2EvDSipOdCXyBBRHGjRYUE9egLzxA8tT2p5SctSRzueTbmyrY7ZPC20B3gUoWdgeziW12xduWE-C2Mb9yrgBZzBlW2gp2KUFUVSGUBbxiwrH6A0czM5uspV6Ks/s1600/Copy%20of%20Adriana_Lamb_Template%20(2).png">
+                    <h2>Psst...I'm growing a community specifically focused on teaching <b class="highlightBlue">
                             YOU </b>more about programming.</h2>
                     <button class="tech_debt_btn" id="learn_more">check it out!</button>
                     </img>
@@ -765,7 +871,7 @@
 
         </div>
         <img style="width:100vw; margin-left: 50%; transform: translateX(-50%);"
-            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjC38lPoT0kPNMSPon1EHQjGjkcnQsI3q2SDMVxUFDdNM5jGRDENiG5Y5ndKD0_oTRNowuzGrT0Uot1Gm8J3OzTWEqaTjrq29FH0RtQs9gjTLVUW6hPeKOq1lvBxQGezZI6q7-giBLEs2lhXCdwDGA7lLPm3D_PHJ8_ZAMXQORmtXbKNw/s1600/Game%20Developer%20Resume%20Website%20in%20Black%20and%20White%20Simple%20and%20Minimal%20Style%20(6).png">
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEkgbSWhG07lnBxFHg4Cb0Y62nxDfSC_VZtHbiQtLC6h4yz0NRUNFc8dXb5riAgR3VWtGT2_dsNFfmo6bcVA8Ch9PbNsdusBGFPL05t8aJFD8i8T1KJnzUKAQwyw0abIV0HxVaYO9bzq6-cZvDCxX3BSfo-Txs5_St_wHPSoCiN09JeZY/s1600/Copy%20of%20Adriana_Lamb_Template%20(3).png">
 
     </div>
 
