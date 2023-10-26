@@ -2984,7 +2984,7 @@ display:none
             float: right;
         }
 
-        .landing_title .highlightBlue {
+        .landing_title .highlightPink {
             font-size: 7vw;
         }
 
@@ -3236,6 +3236,27 @@ display:none
             font: normal 400 11px Montserrat, sans-serif;
         }
 
+        .FeaturedPost .post-title a {
+            color: #F63562 !important;
+        }
+
+        .FeaturedPost .snippet-container {
+            color: white;
+        }
+
+
+        .FeaturedPost {
+            padding-bottom: 10%;
+        }
+
+        .blog-posts.hfeed.container {
+            margin-top: 0%;
+            width: 75%;
+            margin-left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: -15%;
+        }
+
         .tech_debt_btn {
             padding: 3px;
             font-size: 60%;
@@ -3255,9 +3276,12 @@ display:none
         }
 
         .widget.Blog {
-            width: 90vw;
+            width: 100vw;
             margin-left: 50%;
             transform: translateX(-50%);
+            background-color: #A4A5B1;
+            padding: 10px;
+            padding-bottom: 30%;
         }
 
         .item-view.widget.Blog.post {
@@ -3407,7 +3431,7 @@ display:none
             &lt;div class=&quot;logo_section&quot;&gt;
                 &lt;img class=&quot;logo&quot; 
  src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7Qn6gYqY2shs-Q3h5KPh92FOslcXmzXsH-6VHSNFNjw0JGnBF7EEd0hDNXtQFdAW1Rd3lV8gJvFWnUBLlnapuyx-Z_b_c0EP-zReYE3BjC_RTSTGCk3RjhbcKuAZIpiJ8TInLWxteyW9SHYmOmeQBmWIG-cZ7BBg_Tz3wJxfo4N0Ynug/s1600/Typography%20Initial%20Letter%20Brand%20Logo.png&quot; /&gt;
-                &lt;h2&gt;[Your Name]&lt;/h2&gt;
+                &lt;h2&gt;[Insert Name]&lt;/h2&gt;
             &lt;/div&gt;
             &lt;div class=&quot;navbar_items&quot;&gt;
                 &lt;a href=&quot;#about_me&quot;&gt;About Me&lt;/a&gt;
@@ -3444,7 +3468,7 @@ display:none
                     &lt;li class=&quot;bulletPoint&quot;&gt;
                         &lt;h2 class=&quot;landing_title&quot;&gt;Hi, I&#39;m
                             &lt;br /&gt;
-                            &lt;b class=&quot;highlightBlue&quot;&gt; [Insert Name] +&lt;/b&gt;
+                            &lt;b class=&quot;highlightPink&quot;&gt; [INSERT NAME] +&lt;/b&gt;
                         &lt;/h2&gt;
                         &lt;!-- &lt;span class=&quot;horizontal-line&quot;&gt;&lt;/span&gt; --&gt;
                     &lt;/li&gt;
@@ -3477,7 +3501,7 @@ display:none
                 &lt;/img
 &gt;&lt;/div&gt;
                 &lt;div class=&quot;tech_debt_about_description&quot;&gt;
-                    &lt;h2 class=&quot;highlightBlue&quot;&gt;Hi, I&#39;m Adriana&lt;/h2&gt;
+                    &lt;h2 class=&quot;highlightPink&quot;&gt;A Little About Me&lt;/h2&gt;
                     &lt;p&gt;I am a an experienced full-stack developer specializing in cybersecurity, AWS cloud engineering,
                         Angular,
                         and big data development. My expertise is complemented by a drive for continuous improvement.
@@ -3508,7 +3532,7 @@ display:none
                 &lt;/div&gt;
                 &lt;div class=&quot;tech_debt_about_description&quot; style=&quot;width:45%; margin-top: 10%;&quot;&gt;
                     &lt;ul&gt;
-                        &lt;h2 class=&quot;highlightBlue&quot;&gt;Full-Stack developer&lt;/h2&gt;
+                        &lt;h2 class=&quot;highlightPink&quot;&gt;Full-Stack developer&lt;/h2&gt;
                         &lt;p&gt;I offer Full-Stack Development expertise, blending front-end finesse with back-end
                             efficiency.
                             Skilled in HTML, CSS, JavaScript, Python, Node.js, and Java, I create intuitive interfaces
@@ -3516,7 +3540,7 @@ display:none
                             robust back-end solutions for optimized user experiences.&lt;/p&gt;
                     &lt;/ul&gt;
                     &lt;ul&gt;
-                        &lt;h2 class=&quot;highlightBlue&quot;&gt;Responsive Designs&lt;/h2&gt;
+                        &lt;h2 class=&quot;highlightPink&quot;&gt;Responsive Designs&lt;/h2&gt;
                         &lt;p&gt;I specialize in comprehensive Full-Stack Development, seamlessly integrating front-end
                             finesse
                             with back-end efficiency. With expertise in HTML, CSS, and JavaScript, I craft intuitive
@@ -3524,7 +3548,7 @@ display:none
                         &lt;/p&gt;
                     &lt;/ul&gt;
                     &lt;ul&gt;
-                        &lt;h2 class=&quot;highlightBlue&quot;&gt;Mentorship&lt;/h2&gt;
+                        &lt;h2 class=&quot;highlightPink&quot;&gt;Mentorship&lt;/h2&gt;
                         &lt;p&gt;As your programming mentor, I&#39;m here to supercharge your skills. Through dynamic lessons and
                             exciting projects, I&#39;ll propel your coding journey forward. Let&#39;s unleash your full
                             potential
@@ -3540,7 +3564,7 @@ display:none
 
             &lt;div class=&quot;statement section1&quot;&gt;
                 &lt;h1 class=&quot;tech_debt_header&quot;&gt;&quot;In a world of algorithms and lines of code, remember that &lt;b
-                        class=&quot;highlightBlue&quot;&gt;YOU are the
+                        class=&quot;highlightPink&quot;&gt;YOU are the
                     true source of innovation.&quot;&lt;/b
 &gt;&lt;/h1&gt;
                 &lt;p&gt;I approach my work as a full-stack developer with enthusiasm, curiosity, and a drive to achieve
@@ -3560,7 +3584,7 @@ display:none
  src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv0zeamM_CSXAbs60wkwspZ2FWw1530UmebgfjXrsVqjAtwG8bNg2qRkpSkyilWO74BlsQNx2F3eaQ3mqofC6jraIckxJdLczPprG6NjPtlbL-lxmw-wp__Qr9RpsgImZGB_nol6EHuhONl3m4PQ0V7HCZeRCXGF-F4SOfDov2RkDuhJA/s1600/Copy%20of%20Adriana_Lamb_Template%20(5).png&quot; /&gt;
                 &lt;div class=&quot;tech_debt_round_boarder skills_list&quot;&gt;
                     &lt;ul&gt;
-                        &lt;h2 class=&quot;highlightBlue&quot;&gt;Front-End Development&lt;/h2&gt;
+                        &lt;h2 class=&quot;highlightPink&quot;&gt;Front-End Development&lt;/h2&gt;
                         &lt;li&gt;Angular&lt;/li&gt;
                         &lt;li&gt;React&lt;/li&gt;
                         &lt;li&gt;Django&lt;/li&gt;
@@ -3570,7 +3594,7 @@ display:none
                         &lt;li&gt;Typescript&lt;/li&gt;
                     &lt;/ul&gt;
                     &lt;ul&gt;
-                        &lt;h2 class=&quot;highlightBlue&quot;&gt;Back-End Development&lt;/h2&gt;
+                        &lt;h2 class=&quot;highlightPink&quot;&gt;Back-End Development&lt;/h2&gt;
                         &lt;li&gt;Java&lt;/li&gt;
                         &lt;li&gt;Go&lt;/li&gt;
                         &lt;li&gt;SQL&lt;/li&gt;
@@ -3584,7 +3608,7 @@ display:none
                         &lt;li&gt;Gradle&lt;/li&gt;
                     &lt;/ul&gt;
                     &lt;ul&gt;
-                        &lt;h2 class=&quot;highlightBlue&quot;&gt;DevOps&lt;/h2&gt;
+                        &lt;h2 class=&quot;highlightPink&quot;&gt;DevOps&lt;/h2&gt;
                         &lt;li&gt;AWS&lt;/li&gt;
                         &lt;li&gt;GoCD&lt;/li&gt;
                         &lt;li&gt;Jenkins&lt;/li&gt;
@@ -3607,7 +3631,7 @@ display:none
                 &lt;div style=&quot;width: 80%; margin-left: 50%; transform: translateX(-50%);&quot;&gt;
                     &lt;h1&gt;Let&#39;s Talk!&lt;/h1&gt;
                     &lt;p&gt;Have any project ideas? Looking to kickstart your career in tech? &lt;a
-                            href=&quot;https://calendly.com/adriana-michelle-long&quot; class=&quot;highlightBlue&quot;
+                            href=&quot;https://calendly.com/adriana-michelle-long&quot; class=&quot;highlightPink&quot;
                             target=&quot;_blank&quot;&gt;Schedule
                             time with me to talk!&lt;/a
 &gt;&lt;/p&gt;
@@ -3618,7 +3642,7 @@ display:none
         &lt;/div&gt;
 
         &lt;style&gt;
-            .highlightBlue {
+            .highlightPink {
                 color: #F63562 !important;
                 font-weight: bolder;
             }
@@ -3714,7 +3738,7 @@ display:none
                 margin-left: 50%;
                 transform: translateX(-50%);
                 background-color: #A4A5B1;
-                padding-bottom: 10%;
+                padding-bottom: 20%;
 
 
             }
@@ -3743,7 +3767,7 @@ display:none
 
             .tech_debt_round_boarder.skills_list h2 {
                 font-size: 2vw;
-               
+
             }
 
 
@@ -3812,7 +3836,7 @@ display:none
                 &lt;div class=&quot;round_boarder_right&quot;&gt;
                     &lt;img
                         src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaYuVB0FvVw6jTb21QbfkmwAAEKEcB1pRjCZW-edlCV5pYjGOigxjaR2EvDSipOdCXyBBRHGjRYUE9egLzxA8tT2p5SctSRzueTbmyrY7ZPC20B3gUoWdgeziW12xduWE-C2Mb9yrgBZzBlW2gp2KUFUVSGUBbxiwrH6A0czM5uspV6Ks/s1600/Copy%20of%20Adriana_Lamb_Template%20(2).png&quot;&gt;
-                    &lt;h2&gt;Psst...I&#39;m growing a community specifically focused on teaching &lt;b class=&quot;highlightBlue&quot;&gt;
+                    &lt;h2&gt;Psst...I&#39;m growing a community specifically focused on teaching &lt;b class=&quot;highlightPink&quot;&gt;
                             YOU &lt;/b&gt;more about programming.&lt;/h2&gt;
                     &lt;button class=&quot;tech_debt_btn&quot; id=&quot;learn_more&quot;&gt;check it out!&lt;/button&gt;
                     
