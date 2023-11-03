@@ -2801,7 +2801,7 @@ display:none
               </b:if>
               <div class='blog-name'>
                 <b:section id='header' name='Header' showaddelement='false'>
-                  <b:widget id='Header1' locked='true' title='techdebtblog123 (Header)' type='Header' version='2' visible='true'>
+                  <b:widget id='Header1' locked='true' title='newtechblog (Header)' type='Header' version='2' visible='true'>
                     <b:widget-settings>
                       <b:widget-setting name='displayUrl'/>
                       <b:widget-setting name='displayHeight'>0</b:widget-setting>
@@ -3223,6 +3223,7 @@ display:none
             border-radius: 3%;
             font-size: 5px;
             margin-left: 15%;
+            margin-right: 6%;
 
         }
 
@@ -3269,6 +3270,10 @@ display:none
             border-style: solid;
             border-color: #2E2E2E;
             margin-bottom: 10%;
+        }
+
+        .tech_debt_btn:hover {
+            background-color: #F63562 !important;
         }
 
         .post-body-container {
@@ -3360,16 +3365,32 @@ display:none
             }
             const hashmap = {
                 &quot;learn_more&quot;: &quot;https://discord.gg/tZ4FNkgdvE&quot;,
+                &quot;learn_more_btn&quot;: &quot;https://discord.gg/tZ4FNkgdvE&quot;,
                 &quot;discord&quot;: &quot;https://discord.gg/tZ4FNkgdvE&quot;,
                 &quot;braintrust&quot;: &quot;https://app.usebraintrust.com/r/adriana110/&quot;
             };
 
+            //you go to the home page when the name or the logo is clicked
+
+            const logo = document.getElementById(&quot;logo&quot;);
+            const logo_name = document.getElementById(&quot;logo_name&quot;);
+
+            if (logo &amp;&amp; logo_name) {
+                logo.addEventListener(&quot;click&quot;, () =&gt; {
+                    window.location.href = &quot;https://www.techdebtgyal.com/&quot;;
+                });
+
+                logo_name.addEventListener(&quot;click&quot;, () =&gt; {
+                    window.location.href = &quot;https://www.techdebtgyal.com/&quot;;
+                });
+            }
+
             //search functionality
 
-            var hostname = window.location.hostname;
+            const hostname = window.location.hostname;
             document.getElementById(&#39;search_functionality&#39;).value = hostname;
             // Set the form action based on the hostname
-            var form = document.querySelector(&#39;form&#39;);
+            const form = document.querySelector(&#39;form&#39;);
             form.action = &#39;https://&#39; + hostname + &#39;/search&#39;;
 
             externalResources(hashmap);
@@ -3380,7 +3401,7 @@ display:none
             const margins = document.getElementsByClassName(&quot;centered-bottom&quot;)
             console.log(currentPath)
 
-            if (currentPath != &quot;/&quot;) { // Corrected regular expression
+            if (main &amp;&amp; currentPath != &quot;/&quot;) { // Corrected regular expression
                 for (let m of main) {
                     m.style.display = &quot;none&quot;;
                 }
@@ -3404,7 +3425,7 @@ display:none
                     element.addEventListener(&#39;click&#39;, () =&gt; {
                         window.open(hashmap[key], &#39;_blank&#39;);
                     });
-                } else{
+                } else {
                     console.log(`looks like this element: ${element} does not exist`)
                 }
             }
@@ -3431,9 +3452,9 @@ display:none
     &lt;div class=&quot;tech_debt_navbar&quot;&gt;
         &lt;div class=&quot;left_side_navbar&quot;&gt;
             &lt;div class=&quot;logo_section&quot;&gt;
-                &lt;img class=&quot;logo&quot; 
+                &lt;img class=&quot;logo&quot; id=&quot;logo&quot; 
  src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7Qn6gYqY2shs-Q3h5KPh92FOslcXmzXsH-6VHSNFNjw0JGnBF7EEd0hDNXtQFdAW1Rd3lV8gJvFWnUBLlnapuyx-Z_b_c0EP-zReYE3BjC_RTSTGCk3RjhbcKuAZIpiJ8TInLWxteyW9SHYmOmeQBmWIG-cZ7BBg_Tz3wJxfo4N0Ynug/s1600/Typography%20Initial%20Letter%20Brand%20Logo.png&quot; /&gt;
-                &lt;h2&gt;[Insert Name]&lt;/h2&gt;
+                &lt;h2 id=&quot;logo_name&quot;&gt;[Insert Name]&lt;/h2&gt;
             &lt;/div&gt;
             &lt;div class=&quot;navbar_items&quot;&gt;
                 &lt;a href=&quot;#about_me&quot;&gt;About Me&lt;/a&gt;
@@ -3445,7 +3466,7 @@ display:none
 
         &lt;form action=&quot;search&quot; target=&quot;_top&quot; class=&quot;tech_debt_search&quot; id=&quot;search_functionality&quot;&gt;
             &lt;div class=&quot;search-input&quot;&gt;
-                &lt;input aria-label=&quot;Search this blog&quot; autocomplete=&quot;off&quot; name=&quot;q&quot; placeholder=&quot;Search My Blog&quot; value=&quot;&quot; /&gt;
+                &lt;input aria-label=&quot;Search this blog&quot; autocomplete=&quot;off&quot; name=&quot;q&quot; placeholder=&quot;Search&quot; value=&quot;&quot; /&gt;
             &lt;/div&gt;
 
         &lt;/form&gt;
@@ -3463,20 +3484,20 @@ display:none
                     &lt;div class=&quot;social_icons&quot;&gt;
                         &lt;i class=&quot;fab fa-facebook-f&quot; id=&quot;facebook&quot;&gt;&lt;/i&gt;
                         &lt;i class=&quot;fab fa-github&quot; id=&quot;github&quot;&gt;&lt;/i&gt;
-                        &lt;i class=&quot;fab fa-instagram&quot; id=&quot;instagram&quot;&gt;&lt;/i&gt;
+                        &lt;i class=&quot;fab fa-twitter&quot; id=&quot;instagram&quot;&gt;&lt;/i&gt;
                         &lt;i class=&quot;fab fa-linkedin&quot; id=&quot;linkedin&quot;&gt;&lt;/i&gt;
                     &lt;/div&gt;
 
                     &lt;li class=&quot;bulletPoint&quot;&gt;
                         &lt;h2 class=&quot;landing_title&quot;&gt;Hi, I&#39;m
                             &lt;br /&gt;
-                            &lt;b class=&quot;highlightPink&quot;&gt; [INSERT NAME] +&lt;/b&gt;
+                            &lt;b class=&quot;highlightPink&quot;&gt; [Insert Name] +&lt;/b&gt;
                         &lt;/h2&gt;
                         &lt;!-- &lt;span class=&quot;horizontal-line&quot;&gt;&lt;/span&gt; --&gt;
                     &lt;/li&gt;
                     &lt;div class=&quot;landing_bottom_elements&quot;&gt;
                         &lt;h2&gt;Welcome to my website&lt;/h2&gt;
-                        &lt;button style=&quot;z-index: 100;&quot;&gt;Learn More&lt;/button&gt;
+                        &lt;button id=&quot;learn_more_btn&quot; style=&quot;z-index: 100;&quot;&gt;Learn More&lt;/button&gt;
                         &lt;img style=&quot;width: 115%; margin-left:-10%; position: absolute; z-index: 1; margin-top:3%&quot; 
  class=&quot;hand&quot; 
  src=&quot;https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLOGimOmB0AfTrvC5Ksvd-frM3fO2rsf0laOQFB6UucjYO0O4w3k7Il0oqQwUKveViqZTloXRflUSfkMGIjGOY2IZAb1OJfxe9G5KIUBXvbq08diHVw3ayA_cYxMgC5Gb4IKnhiUCMwvbCa-KH9E-EtBJYnV10euACwNoFgIGTPWigYMA/s1600/Tech%20Website%20in%20Neon%20Pink%20Violet%20Green%20Gradients%20Style%20(2).png&quot; /&gt;
@@ -3503,7 +3524,7 @@ display:none
                 &lt;/img
 &gt;&lt;/div&gt;
                 &lt;div class=&quot;tech_debt_about_description&quot;&gt;
-                    &lt;h2 class=&quot;highlightPink&quot;&gt;A Little About Me&lt;/h2&gt;
+                    &lt;h2 class=&quot;highlightPink&quot;&gt;A Little About Me...&lt;/h2&gt;
                     &lt;p&gt;I am a an experienced full-stack developer specializing in cybersecurity, AWS cloud engineering,
                         Angular,
                         and big data development. My expertise is complemented by a drive for continuous improvement.
@@ -5323,6 +5344,44 @@ display:none
             <data:messages.visitProfile/>
           </a>
         </b:includable>
+        </b:widget>
+        <b:widget id='HTML1' locked='false' title='' type='HTML' visible='true'>
+          <b:widget-settings>
+            <b:widget-setting name='content'>&lt;script&gt;
+
+    
+    document.addEventListener(&#39;DOMContentLoaded&#39;, ()=&gt;{
+        const header = document.getElementsByClassName(&#39;centered-top-placeholder&#39;)
+        const container = document.getElementsByClassName(&#39;centered-top-container&#39;)
+        document.addEventListener(&#39;scroll&#39;, ()=&gt;{
+            navbarOnScroll(header);
+            navbarOnScroll(container);
+    
+        });
+    
+    });
+    
+    
+    function navbarOnScroll(header){
+        Array.from(header).forEach(header =&gt;{
+            if(document.documentElement.scrollTop === 0){
+                header.style.setProperty(&#39;background&#39;, &#39;green&#39;, &#39;important&#39;)
+            } else{
+                header.style.setProperty(&#39;background&#39;, &#39;yellow&#39;, &#39;important&#39;)
+            }
+    
+        });
+    
+    }
+      
+    &lt;/script&gt;</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main'>
+  <b:include name='widget-title'/>
+  <div class='widget-content'>
+    <data:content/>
+  </div>
+</b:includable>
         </b:widget>
       </b:section>
     </aside>
