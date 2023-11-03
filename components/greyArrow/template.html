@@ -275,6 +275,7 @@
             border-radius: 3%;
             font-size: 5px;
             margin-left: 15%;
+            margin-right: 6%;
 
         }
 
@@ -321,6 +322,10 @@
             border-style: solid;
             border-color: #2E2E2E;
             margin-bottom: 10%;
+        }
+
+        .tech_debt_btn:hover {
+            background-color: #F63562 !important;
         }
 
         .post-body-container {
@@ -412,16 +417,32 @@
             }
             const hashmap = {
                 "learn_more": "https://discord.gg/tZ4FNkgdvE",
+                "learn_more_btn": "https://discord.gg/tZ4FNkgdvE",
                 "discord": "https://discord.gg/tZ4FNkgdvE",
                 "braintrust": "https://app.usebraintrust.com/r/adriana110/"
             };
 
+            //you go to the home page when the name or the logo is clicked
+
+            const logo = document.getElementById("logo");
+            const logo_name = document.getElementById("logo_name");
+
+            if (logo && logo_name) {
+                logo.addEventListener("click", () => {
+                    window.location.href = "https://www.techdebtgyal.com/";
+                });
+
+                logo_name.addEventListener("click", () => {
+                    window.location.href = "https://www.techdebtgyal.com/";
+                });
+            }
+
             //search functionality
 
-            var hostname = window.location.hostname;
+            const hostname = window.location.hostname;
             document.getElementById('search_functionality').value = hostname;
             // Set the form action based on the hostname
-            var form = document.querySelector('form');
+            const form = document.querySelector('form');
             form.action = 'https://' + hostname + '/search';
 
             externalResources(hashmap);
@@ -432,7 +453,7 @@
             const margins = document.getElementsByClassName("centered-bottom")
             console.log(currentPath)
 
-            if (currentPath != "/") { // Corrected regular expression
+            if (main && currentPath != "/") { // Corrected regular expression
                 for (let m of main) {
                     m.style.display = "none";
                 }
@@ -456,7 +477,7 @@
                     element.addEventListener('click', () => {
                         window.open(hashmap[key], '_blank');
                     });
-                } else{
+                } else {
                     console.log(`looks like this element: ${element} does not exist`)
                 }
             }
@@ -483,9 +504,9 @@
     <div class="tech_debt_navbar">
         <div class="left_side_navbar">
             <div class="logo_section">
-                <img class="logo"
+                <img class="logo" id="logo"
                     src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7Qn6gYqY2shs-Q3h5KPh92FOslcXmzXsH-6VHSNFNjw0JGnBF7EEd0hDNXtQFdAW1Rd3lV8gJvFWnUBLlnapuyx-Z_b_c0EP-zReYE3BjC_RTSTGCk3RjhbcKuAZIpiJ8TInLWxteyW9SHYmOmeQBmWIG-cZ7BBg_Tz3wJxfo4N0Ynug/s1600/Typography%20Initial%20Letter%20Brand%20Logo.png">
-                <h2>[Insert Name]</h2>
+                <h2 id="logo_name">[Insert Name]</h2>
             </div>
             <div class="navbar_items">
                 <a href="#about_me">About Me</a>
@@ -497,7 +518,7 @@
 
         <form action="search" target="_top" class="tech_debt_search" id="search_functionality">
             <div class="search-input">
-                <input aria-label="Search this blog" autocomplete="off" name="q" placeholder="Search My Blog" value="">
+                <input aria-label="Search this blog" autocomplete="off" name="q" placeholder="Search" value="">
             </div>
 
         </form>
@@ -515,20 +536,20 @@
                     <div class="social_icons">
                         <i class="fab fa-facebook-f" id="facebook"></i>
                         <i class="fab fa-github" id="github"></i>
-                        <i class="fab fa-instagram" id="instagram"></i>
+                        <i class="fab fa-twitter" id="instagram"></i>
                         <i class="fab fa-linkedin" id="linkedin"></i>
                     </div>
 
                     <li class="bulletPoint">
                         <h2 class="landing_title">Hi, I'm
                             <br>
-                            <b class="highlightPink"> [INSERT NAME] +</b>
+                            <b class="highlightPink"> [Insert Name] +</b>
                         </h2>
                         <!-- <span class="horizontal-line"></span> -->
                     </li>
                     <div class="landing_bottom_elements">
                         <h2>Welcome to my website</h2>
-                        <button style="z-index: 100;">Learn More</button>
+                        <button id="learn_more_btn" style="z-index: 100;">Learn More</button>
                         <img style="width: 115%; margin-left:-10%; position: absolute; z-index: 1; margin-top:3%"
                             class="hand"
                             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLOGimOmB0AfTrvC5Ksvd-frM3fO2rsf0laOQFB6UucjYO0O4w3k7Il0oqQwUKveViqZTloXRflUSfkMGIjGOY2IZAb1OJfxe9G5KIUBXvbq08diHVw3ayA_cYxMgC5Gb4IKnhiUCMwvbCa-KH9E-EtBJYnV10euACwNoFgIGTPWigYMA/s1600/Tech%20Website%20in%20Neon%20Pink%20Violet%20Green%20Gradients%20Style%20(2).png">
@@ -553,7 +574,7 @@
                     </img>
                 </div>
                 <div class="tech_debt_about_description">
-                    <h2 class="highlightPink">A Little About Me</h2>
+                    <h2 class="highlightPink">A Little About Me...</h2>
                     <p>I am a an experienced full-stack developer specializing in cybersecurity, AWS cloud engineering,
                         Angular,
                         and big data development. My expertise is complemented by a drive for continuous improvement.
